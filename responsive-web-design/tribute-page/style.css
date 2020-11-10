@@ -254,8 +254,7 @@ h2 {
 }
 
 h3 {
-  margin-top: 40px;
-  position: absolute;
+  margin: 40px 0 80px;
   font-family: Fira Sans;
   font-style: normal;
   font-weight: normal;
@@ -351,6 +350,10 @@ a {
   bottom: 0;
   right: -16px;
   transform: translateY(50%);
+}
+
+#img-caption {
+  position: absolute;
 }
 
 #author,
