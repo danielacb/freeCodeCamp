@@ -161,7 +161,7 @@ article .frame {
 @media (min-width: 768px) {
   .frame,
   .frame img {
-    width: 440px;
+    width: 420px;
   }
   article .frame {
     margin: 80px auto 220px;
@@ -211,5 +211,8 @@ article .frame {
   }
   h1 {
     margin: 90px 0 42px;
+  }
+  .desktop-hidden {
+    display: none;
   }
 }
