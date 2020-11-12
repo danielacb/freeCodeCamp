@@ -140,7 +140,6 @@ a {
   margin-left: -20px;
 }
 
-#author,
 article {
   max-width: calc(100% - 48px);
   margin: 24px auto;
@@ -179,19 +178,19 @@ article .frame {
     font-size: 18px;
     margin-top: 60px;
   }
-
   .frame:before {
     top: -30px;
     left: -30px;
   }
-
   .frame:after {
     right: -30px;
     bottom: -30px;
   }
-
   aside {
     padding-top: 100px;
+  }
+  article {
+    max-width: calc(100% - 120px);
   }
 }
 
