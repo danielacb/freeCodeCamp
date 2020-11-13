@@ -12,31 +12,31 @@ aside {
 }
 
 h1 {
-  font-family: "Playfair Display", serif;
-  max-width: calc(100% - 48px);
-  margin: 142px auto 12px;
-  font-size: 46px;
-  line-height: 62px;
-  font-style: italic;
   background-color: #160f24;
+  font-family: "Playfair Display", serif;
+  font-size: 46px;
+  font-style: italic;
+  line-height: 62px;
+  margin: 142px auto 12px;
+  max-width: calc(100% - 48px);
 }
 
 h2 {
-  position: absolute;
-  margin: 0;
-  font-weight: 600;
   font-size: 42px;
-  line-height: 48px;
+  font-weight: 600;
   letter-spacing: 0.02em;
+  line-height: 48px;
+  margin: 0;
+  position: absolute;
 }
 
 h3 {
-  margin: 40px 0 80px;
   font-family: Fira Sans;
+  font-size: 12px;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
   line-height: 130%;
+  margin: 40px 0 80px;
 }
 
 h3 span {
@@ -44,22 +44,22 @@ h3 span {
 }
 
 h4 {
-  margin: 0 0 4px;
-  font-weight: bold;
   font-size: 24px;
+  font-weight: bold;
   line-height: 29px;
+  margin: 0 0 4px;
 }
 
 h5 {
-  margin: 0;
-  font-weight: 300;
   font-size: 12px;
+  font-weight: 300;
   line-height: 14px;
+  margin: 0;
 }
 
 p {
-  font-weight: 300;
   font-size: 20px;
+  font-weight: 300;
   line-height: 32px;
 }
 
@@ -69,14 +69,14 @@ p a {
 }
 
 a {
-  text-decoration: none;
   color: #160f24;
+  text-decoration: none;
 }
 
 #intro {
-  padding: 32px 24px 42px;
   background: #160f24;
   color: #ffffff;
+  padding: 32px 24px 42px;
 }
 
 .frame {
@@ -91,35 +91,35 @@ a {
 .frame:before,
 .frame:after {
   content: "";
-  position: absolute;
-  z-index: -1;
-  width: 100%;
   height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
 }
 
 .frame:before {
   background-color: #623bb2;
-  top: -20px;
   left: -20px;
+  top: -20px;
 }
 
 .frame:after {
-  right: -20px;
-  bottom: -20px;
   background-color: #20133a;
+  bottom: -20px;
+  right: -20px;
 }
 
 .frame img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
   max-width: 100%;
   width: 230px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
 }
 
 #title h2:nth-child(1) {
-  top: 0;
   left: -16px;
+  top: 0;
   transform: translateY(-50%);
 }
 
@@ -135,23 +135,23 @@ a {
 
 #img-caption,
 .frame h3 {
+  margin-left: -20px;
   position: absolute;
   width: calc(100% + 40px);
-  margin-left: -20px;
 }
 
 article {
-  max-width: calc(100% - 48px);
-  margin: 24px auto;
   background-color: #ffffff;
+  margin: 24px auto;
+  max-width: calc(100% - 48px);
 }
 
 #author img {
-  width: 50px;
-  height: 50px;
   border-radius: 50%;
   float: left;
+  height: 50px;
   margin-right: 12px;
+  width: 50px;
 }
 
 article .frame {
@@ -179,12 +179,12 @@ article .frame {
     margin-top: 60px;
   }
   .frame:before {
-    top: -30px;
     left: -30px;
+    top: -30px;
   }
   .frame:after {
-    right: -30px;
     bottom: -30px;
+    right: -30px;
   }
   aside {
     padding-top: 100px;
@@ -196,15 +196,15 @@ article .frame {
 
 @media (min-width: 1025px) {
   aside {
-    width: 44%;
-    position: fixed;
     height: 100vh;
+    position: fixed;
+    width: 44%;
   }
   #intro,
   article {
-    width: calc(56% - 200px);
     float: right;
     padding: 48px 100px;
+    width: calc(56% - 200px);
   }
   article {
     margin: 0;
