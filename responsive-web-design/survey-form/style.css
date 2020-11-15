@@ -1,0 +1,116 @@
+body {
+  background-color: #eddee8;
+  color: #7a0052;
+  font-family: "Mukta Vaani", sans-serif;
+  margin: 0;
+  line-height: 2.2em;
+}
+
+h1 {
+  color: #e00096;
+  font-size: 2.4em;
+  text-align: center;
+}
+
+#description {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+#container {
+  background-color: #ffffff;
+  border-radius: 32px;
+  filter: drop-shadow(0px 8px 16px rgba(17, 17, 17, 0.04));
+  margin: 60px auto;
+  max-width: 480px;
+  padding: 20px 80px;
+}
+
+label + label,
+select,
+label > textarea,
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  display: block;
+}
+
+input,
+textarea,
+select {
+  background-color: #f6eff4;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  color: #cc0088;
+  font-family: "Mukta Vaani", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  padding: 16px 12px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #e00096;
+  outline: none;
+}
+
+.w-100 {
+  /* 100% - horizontal padding (2* 12px)  - border (2px) */
+  width: calc(100% - 26px);
+}
+
+select {
+  width: 100%;
+}
+
+label {
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+label span {
+  opacity: 0.8;
+}
+
+label strong {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.checkboxes label {
+  margin-top: 8px;
+}
+
+label.radios {
+  margin: 0;
+}
+
+input[type="submit"] {
+  background-color: #e00096;
+  color: #ffffff;
+  margin: 0 auto 40px;
+  width: 100%;
+}
+
+::placeholder {
+  color: #493141;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  opacity: 0.6;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+@media (max-width: 480px) {
+  #container {
+    margin: 20px 0;
+    padding: 20px;
+  }
+}
