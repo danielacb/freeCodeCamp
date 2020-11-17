@@ -63,7 +63,26 @@ select:focus {
 }
 
 select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
   width: 100%;
+}
+
+.arrow {
+  position: relative;
+}
+
+.arrow:before {
+  border-bottom: 2px solid #cc0088;
+  border-right: 2px solid #cc0088;
+  content: "";
+  height: 8px;
+  position: absolute;
+  right: 16px;
+  top: calc(50% - 4px);
+  transform: translateY(-50%) rotate(45deg);
+  width: 8px;
+  z-index: 10;
 }
 
 label {
