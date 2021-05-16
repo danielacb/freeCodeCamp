@@ -1,111 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@300;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <title>Survey Form</title>
-</head>
-<body>
-
-  
-  <div id="container">
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
-    <form action="#" id="survey-form">
-      <fieldset>
-        <label for="name" id="name-label">
-          Name
-          <input type="text" name="name" id="name" placeholder="Your name" required class="w-100">
-        </label>
-        <label for="email" id="email-label">
-          E-mail
-          <input type="email" name="email" id="email" placeholder="Your email" required class="w-100">
-        </label>
-        <label for="number" id="number-label">
-          Age
-          <input type="number" name="number" id="number" min="0" max="110" placeholder="Your age" class="w-100">
-        </label>
-      </fieldset>
-      <fieldset>
-        <label><strong>Would you recommend freeCodeCamp to a friend?</strong></label>
-        <label for="definitely" class="radios"><input type="radio" name="recommend" id="definitely" value="definitely">Definitely</label>
-        <label for="maybe" class="radios"><input type="radio" name="recommend" id="maybe" value="maybe">Maybe</label>
-        <label for="not-sure" class="radios"><input type="radio" name="recommend" id="not-sure" value="not-sure">Not sure</label>
-      </fieldset>
-      <fieldset>
-        <label for="dropdown" id="dropdown-label">
-          <strong>What is your favorite feature of freeCodeCamp?</strong>
-          <div class="arrow">
-            <select name="dropdown" id="dropdown" class="arrow">
-              <option value disabled selected>Select an option</option>
-              <option value="challenges">Challenges</option>
-              <option value="Projects">Projects</option>
-              <option value="community">Community</option>
-              <option value="open-source">Open Source</option>
-            </select>
-          </div>
-        </label>
-      </fieldset>
-      <fieldset class="checkboxes">
-        <label><strong>What would you like to see improved?</strong> <span>(Check all that apply)</span></label>
-        <label for="front-end">
-          <input type="checkbox" name="front-end" id="front-end" value="front-end-projects">
-          Front-end Projects
-        </label>
-        <label for="back-end">
-          <input type="checkbox" name="back-end" id="back-end" value="back-end">
-          Back-end Projects
-        </label>
-        <label for="data-visualization">
-          <input type="checkbox" name="data-visualization" id="data-visualization" value="data-visualization">
-          Data Visualization
-        </label>
-        <label for="challenges">
-          <input type="checkbox" name="challenges" id="challenges" value="challenges">
-          Challenges
-        </label>
-        <label for="open-source-community">
-          <input type="checkbox" name="open-source-community" id="open-source-community" value="open-source-community">
-          Open Source Community
-        </label>
-        <label for="gitter-help-rooms">
-          <input type="checkbox" name="gitter-help-rooms" id="gitter-help-rooms" value="gitter-help-rooms">
-          Gitter help rooms
-        </label>
-        <label for="videos">
-          <input type="checkbox" name="videos" id="videos" value="videos">
-          Videos
-        </label>
-        <label for="city-meetups">
-          <input type="checkbox" name="city-meetups" id="city-meetups" value="city-meetups">
-          City Meetups
-        </label>
-        <label for="wiki">
-          <input type="checkbox" name="wiki" id="wiki" value="wiki">
-          Wiki
-        </label>
-        <label for="forum">
-          <input type="checkbox" name="forum" id="forum" value="forum">
-          Forum
-        </label>
-        <label for="additional-courses">
-          <input type="checkbox" name="additional-courses" id="additional-courses" value="additional-courses">
-          Additional Courses
-        </label>
-      </fieldset>
-      <fieldset>
-        <label for="comments">
-          <strong>Any comments or suggestions?</strong>
-          <textarea name="comments" id="comments" rows="10" placeholder="Enter your comments here..." class="w-100"></textarea>
-        </label>
-      </fieldset>
-        <input type="submit" value="Submit" id="submit">
-    </form>
-  </div>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <form action="#" id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label">
+            Name
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your name"
+              required
+              class="w-100"
+            />
+          </label>
+          <label for="email" id="email-label">
+            E-mail
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email"
+              required
+              class="w-100"
+            />
+          </label>
+          <label for="number" id="number-label">
+            Age
+            <input
+              type="number"
+              name="number"
+              id="number"
+              min="0"
+              max="110"
+              placeholder="Your age"
+              class="w-100"
+            />
+          </label>
+        </fieldset>
+        <fieldset>
+          <label
+            ><strong
+              >Would you recommend freeCodeCamp to a friend?</strong
+            ></label
+          >
+          <label for="definitely" class="radios"
+            ><input
+              type="radio"
+              name="recommend"
+              id="definitely"
+              value="definitely"
+            />
+            <span class="checkmark"></span>
+            Definitely
+          </label>
+          <label for="maybe" class="radios"
+            ><input type="radio" name="recommend" id="maybe" value="maybe" />
+            <span class="checkmark"></span>
+            Maybe
+          </label>
+          <label for="not-sure" class="radios"
+            ><input
+              type="radio"
+              name="recommend"
+              id="not-sure"
+              value="not-sure"
+            />
+            <span class="checkmark"></span>
+            Not sure
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown" id="dropdown-label">
+            <strong>What is your favorite feature of freeCodeCamp?</strong>
+            <div class="arrow">
+              <select name="dropdown" id="dropdown" class="arrow">
+                <option value disabled selected>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="Projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open-source">Open Source</option>
+              </select>
+            </div>
+          </label>
+        </fieldset>
+        <fieldset class="checkboxes">
+          <label
+            ><strong>What would you like to see improved?</strong>
+            <span>(Check all that apply)</span></label
+          >
+          <label for="front-end">
+            <input
+              type="checkbox"
+              name="front-end"
+              id="front-end"
+              value="front-end-projects"
+            />
+            <span class="checkmark"
+              ><img src="img/check.svg" alt="Checkmark"
+            /></span>
+            Front-end Projects
+          </label>
+          <label for="back-end">
+            <input
+              type="checkbox"
+              name="back-end"
+              id="back-end"
+              value="back-end"
+            />
+            <span class="checkmark"
+              ><img src="img/check.svg" alt="Checkmark"
+            /></span>
+            Back-end Projects
+          </label>
+          <label for="data-visualization">
+            <input
+              type="checkbox"
+              name="data-visualization"
+              id="data-visualization"
+              value="data-visualization"
+            />
+            <span class="checkmark"
+              ><img src="img/check.svg" alt="Checkmark"
+            /></span>
+            Data Visualization
+          </label>
+          <label for="challenges">
+            <input
+              type="checkbox"
+              name="challenges"
+              id="challenges"
+              value="challenges"
+            />
+            <span class="checkmark"
+              ><img src="img/check.svg" alt="Checkmark"
+            /></span>
+            Challenges
+          </label>
+          <label for="open-source-community">
+            <input
+              type="checkbox"
+              name="open-source-community"
+              id="open-source-community"
+              value="open-source-community"
+            />
+            <span class="checkmark"
+              ><img src="img/check.svg" alt="Checkmark"
+            /></span>
+            Open Source Community
+          </label>
+          <label for="gitter-help-rooms">
+            <input
+              type="checkbox"
+              name="gitter-help-rooms"
+              id="gitter-help-rooms"
+              value="gitter-help-rooms"
+            />
+            <span class="checkmark"
+              ><img src="img/check.svg" alt="Checkmark"
+            /></span>
+            Gitter help rooms
+          </label>
+          <label for="videos">
+            <input type="checkbox" name="videos" id="videos" value="videos" />
+            <span class="checkmark"
+              ><img src="img/check.svg" alt="Checkmark"
+            /></span>
+            Videos
+          </label>
+          <label for="city-meetups">
+            <input
+              type="checkbox"
+              name="city-meetups"
+              id="city-meetups"
+              value="city-meetups"
+            />
+            <span class="checkmark"
+              ><img src="img/check.svg" alt="Checkmark"
+            /></span>
+            City Meetups
+          </label>
+          <label for="wiki">
+            <input type="checkbox" name="wiki" id="wiki" value="wiki" />
+            <span class="checkmark"
+              ><img src="img/check.svg" alt="Checkmark"
+            /></span>
+            Wiki
+          </label>
+          <label for="forum">
+            <input type="checkbox" name="forum" id="forum" value="forum" />
+            <span class="checkmark"
+              ><img src="img/check.svg" alt="Checkmark"
+            /></span>
+            Forum
+          </label>
+          <label for="additional-courses">
+            <input
+              type="checkbox"
+              name="additional-courses"
+              id="additional-courses"
+              value="additional-courses"
+            />
+            <span class="checkmark"
+              ><img src="img/check.svg" alt="Checkmark"
+            /></span>
+            Additional Courses
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="comments">
+            <strong>Any comments or suggestions?</strong>
+            <textarea
+              name="comments"
+              id="comments"
+              rows="10"
+              placeholder="Enter your comments here..."
+              class="w-100"
+            ></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </div>
+  </body>
 </html>
-  

@@ -127,6 +127,49 @@ fieldset {
   padding: 0;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="checkbox"] + .checkmark,
+input[type="radio"] + .checkmark {
+  border: 1px solid #eddee8;
+  display: inline-block;
+  height: 12px;
+
+  margin-right: 2px;
+  transition: 0.3s background-color;
+  width: 12px;
+}
+
+input[type="checkbox"] + .checkmark {
+  position: relative;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] + .checkmark img {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s opacity;
+}
+
+input[type="checkbox"]:checked + .checkmark,
+input[type="radio"]:checked + .checkmark {
+  background-color: #cc0088;
+  border-color: #cc0088;
+}
+
+input[type="checkbox"]:checked + .checkmark img {
+  opacity: 1;
+}
+
+input[type="radio"] + .checkmark {
+  border-radius: 10px;
+}
+
 @media (max-width: 480px) {
   #container {
     margin: 20px 0;
