@@ -6,7 +6,7 @@ const toggle = document.getElementById("menu-toggle");
 const navbar = document.getElementById("nav-bar");
 
 function fixedNav() {
-  if (window.pageYOffset >= window.innerHeight) {
+  if (window.pageYOffset >= 80) {
     navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
