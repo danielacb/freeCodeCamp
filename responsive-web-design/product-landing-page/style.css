@@ -63,6 +63,24 @@ h3 {
   margin-bottom: 10px;
 }
 
+h5 {
+  color: #080809;
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+}
+
+h6 {
+  color: #5e6282;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  margin-bottom: 4px;
+}
+
 p {
   color: #5e6282;
   font-size: 1rem;
@@ -94,6 +112,7 @@ p {
 #header {
   margin: 0 auto;
   min-height: 100vh;
+  overflow-x: hidden;
   width: calc(100% - 48px);
 }
 
@@ -310,6 +329,215 @@ p {
   margin-top: 20px;
   vertical-align: bottom;
   width: 16px;
+}
+
+#book-trip {
+  margin-bottom: 120px;
+  margin-top: -120px;
+  padding: 120px 48px 0;
+}
+
+#book-trip h2 {
+  margin-bottom: 32px;
+  max-width: 511px;
+}
+
+#book-trip .step {
+  margin-bottom: 48px;
+  max-width: 395px;
+  width: 100%;
+}
+
+#book-trip .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 13px;
+  float: left;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#book-trip .choose-destination .icon {
+  background-color: #f0bb1f;
+  background-image: url("/images/choose-destination.svg");
+}
+
+#book-trip .make-payment .icon {
+  background-color: #f15a2b;
+  background-image: url("/images/make-payment.svg");
+}
+
+#book-trip .reach-airport .icon {
+  background-color: #006380;
+  background-image: url("/images/reach-airport.svg");
+}
+
+#book-trip p {
+  color: #707383;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.25rem;
+}
+
+#book-trip .text {
+  display: inline-block;
+}
+
+#book-trip .trip {
+  float: right;
+  height: 300px;
+  max-width: 485px;
+  position: relative;
+  width: 100%;
+}
+
+#book-trip .trip::before {
+  background: #59b1e6;
+  content: "";
+  filter: blur(150px);
+  height: 367px;
+  opacity: 0.8;
+  position: absolute;
+  top: 80px;
+  width: 354px;
+  z-index: -1;
+}
+
+#main-trip {
+  background-color: #ffffff;
+  border-radius: 26px;
+  color: #84829a;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  line-height: 1.25rem;
+  max-width: 370px;
+  padding: 20px 24px;
+  width: 100%;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+    0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+    0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+    0px 20px 13px rgba(0, 0, 0, 0.01),
+    0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+    0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+
+#main-trip img {
+  border-radius: 24px;
+  display: block;
+  margin-bottom: 26px;
+  width: 100%;
+}
+
+#main-trip .date {
+  margin-right: 8px;
+}
+
+#main-trip .links {
+  margin-top: 21px;
+}
+
+#main-trip a {
+  background-color: #f5f5f5;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+}
+
+#main-trip a + a {
+  margin-left: 18px;
+}
+
+#main-trip a.nature {
+  background-image: url("/images/leaf.svg");
+}
+
+#main-trip a.map {
+  background-image: url("/images/map.svg");
+}
+
+#main-trip a.direction {
+  background-image: url("/images/direction.svg");
+}
+
+#main-trip .people {
+  display: inline-block;
+  margin-top: 30px;
+  width: 100%;
+}
+
+#main-trip .people::before {
+  background: url("/images/icon-people.svg") no-repeat;
+  content: "";
+  display: inline-block;
+  height: 16px;
+  margin-right: 16px;
+  vertical-align: middle;
+  width: 16px;
+}
+
+#ongoing-trip {
+  background-color: #ffffff;
+  bottom: -32px;
+  max-width: 263px;
+  padding: 18px 20px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+    0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+    0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+    0px 20px 13px rgba(0, 0, 0, 0.01),
+    0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+    0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+
+#ongoing-trip span {
+  color: #84829a;
+  font-size: 0.875rem;
+}
+
+#ongoing-trip img {
+  border-radius: 50%;
+  float: left;
+  margin-right: 12px;
+}
+
+#trip-progress {
+  float: right;
+  max-width: 161px;
+  width: 100%;
+}
+
+#trip-progress p {
+  color: #080809;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+#trip-progress p span {
+  color: #8a79df;
+}
+
+#trip-progress .progress-bar {
+  background: #f5f5f5;
+  border-radius: 30px;
+  height: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+#trip-progress .progress-complete {
+  background-color: #8a79df;
+  border-radius: 30px;
+  height: 100%;
+  width: 40%;
 }
 
 @media (max-width: 1080px) {
