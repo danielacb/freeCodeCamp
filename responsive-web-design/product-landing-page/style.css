@@ -32,6 +32,12 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 h1,
 h2 {
   font-family: "Volkhov", serif;
@@ -337,6 +343,12 @@ p {
   padding: 120px 48px 0;
 }
 
+#book-trip::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
 #book-trip h2 {
   margin-bottom: 32px;
   max-width: 511px;
@@ -538,6 +550,40 @@ p {
   border-radius: 30px;
   height: 100%;
   width: 40%;
+}
+
+#partners {
+  margin: 140px auto;
+  max-width: 1073px;
+  text-align: center;
+  width: 100%;
+}
+
+#partners li {
+  border-radius: 10px;
+  display: inline-block;
+  padding: 16px 32px;
+  transition: 0.4s;
+  vertical-align: middle;
+}
+
+#partners li:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+    0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+    0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+    0px 20px 13px rgba(0, 0, 0, 0.01),
+    0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+    0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+
+#partners li img {
+  filter: grayscale(1);
+  transition: 0.4s;
+}
+
+#partners li:hover img {
+  filter: grayscale(0);
 }
 
 @media (max-width: 1080px) {
