@@ -17,3 +17,20 @@ toggle.onclick = function () {
   menu.classList.toggle("on");
   menuIcon.classList.toggle("on");
 };
+
+const playVideo = document.getElementById("play-button");
+const modal = document.getElementById("modal");
+const closeModal = document.getElementById("close-modal");
+
+playVideo.onclick = function () {
+  toggleModal();
+};
+
+closeModal.onclick = function () {
+  toggleModal();
+};
+
+function toggleModal() {
+  document.body.classList.toggle("modal-open");
+  modal.classList.toggle("modal-open");
+}
