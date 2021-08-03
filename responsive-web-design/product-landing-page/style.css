@@ -704,13 +704,13 @@ p {
   transform: translate(-50%, -50%);
   transition: 0.3s;
   visibility: hidden;
-  width: 100vw;
   z-index: 9999;
 }
 
 #modal.modal-open {
   opacity: 1;
   visibility: visible;
+  width: 100vw;
 }
 
 #close-modal {
@@ -732,6 +732,19 @@ p {
 #modal .video-container iframe {
   height: 100%;
   width: 100%;
+}
+
+footer {
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+footer p {
+  color: #5e6282;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1rem;
+  margin-top: 12px;
 }
 
 @media (max-width: 1080px) {
